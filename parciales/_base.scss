@@ -1,0 +1,56 @@
+* {
+    margin: 3;
+    padding: 3;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+html {
+    background-image: url(../imagenes/lines_texture1100.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+                                        /* TÍTULOS */
+
+.titulo {
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 70px;
+    color: antiquewhite;
+
+    margin-bottom: 2rem;
+    
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.copete {
+    color: antiquewhite;
+    font-size: 30px;
+    margin-bottom: auto;
+}
+
+                                        /* Menú Lateral */
+
+.btn-open-sidebar {
+    display: none;
+}
+
+.nav__item--oculto {
+    display: none;
+}
+

@@ -1,0 +1,30 @@
+$espaciado: 1rem;
+$espaciados: (
+    0: 0,
+    1: $espaciado * 0.25,
+    2: $espaciado * 0.5,
+    3: $espaciado,
+    4: $espaciado * 1.5,
+    5: $espaciado * 5
+);
+
+@each $clave, $valor in $espaciados {
+    .m-#{$clave} {
+        margin: $valor;
+    }    
+}
+
+@mixin crearEspaciados($prefijo, $direccion) {
+    @each $clave, $valor in $espaciados {
+        .m#{$prefijo}-#{$clave} {
+            margin-#{$direccion}: $valor;
+        }    
+    }
+}
+@include crearEspaciados(t, top);
+
+@include crearEspaciados(b, bottom);
+
+@include crearEspaciados(l, left);
+
+@include crearEspaciados(r, right);

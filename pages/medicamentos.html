@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmacia Hesayne - Perfumería</title>
+    
+    <!-- Goofle Fonts - Tipografía -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome - Iconos -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <div class="header__contenedor">
+            <div class="header_logo flex-header--30 nav__logo">
+                <a class="nav__enlace" href="../index.html">
+                    <img src="../imagenes/firmon.png" alt="logo">
+                </a>
+            </div>
+                <div class="flex-header-hijo flex-header--70">
+                    <nav>
+                        <a class="btn-open-sidebar" href="#sidebar"><i class="fas fa-bars" style="color: antiquewhite;"></i></a>
+                        <ul class="nav__lista" id="sidebar">
+                            <li class="nav__item">
+                                <a class="nav__enlace" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__enlace" href="./perfumeria.html">Perfumería</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__enlace nav_enlace--activo" href="./medicamentos.html">Medicamentos</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__enlace" href="./farmacias-de-turno.html">Farmacias de turno</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__enlace" href="./contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav__item nav__item--oculto"> <!-- sidebar -->
+                                <a class="nav__enlace btn-open-sidebar" href="#">❌</a>
+                            </li>
+                        </ul>
+                    </nav>  
+                </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2 class="titulo">Medicamentos</h2>
+        </section>
+        <section class="form-medicamentos">
+            <h1>Pida su medicamento...</h1>
+            <form action="">
+                <div>
+                    <input type="text" id="fullname" name="fullname" placeholder="Nombre y apellido" class="controls">
+                </div>
+                <div>
+                    <input type="email" id="email" name="email" placeholder="E-mail" class="controls">
+                </div>
+                <div>
+                    <input type="number" id="celular" name="celular" placeholder="Teléfono celular" class="controls">
+                </div>
+                <div>
+                    <input type="text" id="medicamento" name="medicamento" placeholder="Nombre del medicamento" class="controls"> 
+                </div>
+                <div>
+                    <label for="obra social">Obra social:</label>
+                    <select class="listado" name="Obra Social" id="obra social">
+                        <option value="...">...</option>
+                        <option value="osde">OSDE</option>
+                        <option value="ioma">IOMA</option>
+                        <option value="swissmedical">Swiss Medical</option>
+                        <option value="amffa">AMFFA</option>
+                        <option value="medife">Medifé</option>
+                    </select>
+                </div>
+                <div>
+                    <textarea class="campodetexto" name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                </div>              
+                <div>
+                    <label for="receta">Imagen de receta</label>
+                    <input type="file" id="receta" name="receta">
+                </div>
+                <div>
+                    <input type="submit" value="Enviar" class="botons btn-green brn-green:hover">
+                    <input type="reset" value="Limpiar" class="botons btn-green brn-green:hover">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer__contenedor">
+            <div class="flex-footer-hijo">
+                <p>Derechos Reservados</p>
+            </div>
+            <div>
+                <img src="../imagenes/firmon.png" alt="">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

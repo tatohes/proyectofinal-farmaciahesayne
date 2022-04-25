@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Este es el sitio de la Farmacia Hesayne donde podrás comprar perfumes, preguntar por medicamentos, enterarte qué farmacias están de turno y hablar con nosotros.">
+    <meta name="keywords"  content="FARMCIA, HESAYNE, PERFUMES, MEDICAMENTOS, TURNO, EMERGENCIAS, MEDICINA">
+    <title>Farmacia Hesayne - Inicio</title>
+
+    
+
+    <!-- Goofle Fonts - Tipografía -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome - Iconos -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- AOS - CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Animate - CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    
+</head>
+<body>
+    <header>
+        <div class="header__contenedor">
+            <div class="header_logo flex-header--30 nav__logo">
+                <a class="nav__enlace" href="../index.html">
+                    <img src="./imagenes/firmon.png" alt="logo">
+                </a>
+            </div>
+                <div class="flex-header-hijo flex-header--70">
+                    <nav>
+                        <a class="btn-open-sidebar" href="#sidebar"><i class="fas fa-bars" style="color: antiquewhite;"></i></a>
+                        <ul class="nav__lista" id="sidebar">
+                            <li class="nav__item">
+                                <a class="nav__enlace nav_enlace--activo" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__enlace" href="pages/perfumeria.html">Perfumería</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__enlace" href="pages/medicamentos.html">Medicamentos</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__enlace" href="pages/farmacias-de-turno.html">Farmacias de turno</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__enlace" href="pages/contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav__item nav__item--oculto"> <!-- sidebar -->
+                                <a class="nav__enlace btn-open-sidebar" href="#">❌</a>
+                            </li>
+                        </ul>
+                    </nav>  
+                </div>
+        </div>
+    </header>
+    <main>
+        <section class="caja grid">
+                <div class="hero__left">
+                    <img src="./imagenes/farmassssok.jpg" style="width: 100%;" alt="Equipo farmacéutico">
+                </div>
+                <div class="grid__flex">
+                    <h1 class="hero__copete">Bienvenidos a</h1>
+                    <h2 class="hero__titulo">Farmacia Hesayne</h2>
+                    <p class="hero__parrafo">Somos Mercedes, Vanina y Ernesto. Trabajamos día a día para mejorar el servicio de la Farmacia Hesayne, un lugar al cuidado de todos sus visitantes desde hace casi 30 años. Es por eso que intentamos estar atentos a sus necesidades día y noche, en el mostrador y ahora acá, en el mundo virtual. Entendemos que a la Farmacia la hacemos entre todos: sus dueños, empleados y clientes. Con gusto atenderemos sus pedidos. Gracias por visitar nuestra nueva casa web.</p>
+                </div>
+        </section>
+        <section class="caja2 grid2">
+            <div class="grid__flex2">
+                <div><h3>Hablanos por WhatsApp</h1></div>
+                <div class="iconitoWapp nav__enlace"><a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp fa-6x" style="color: antiquewhite;"></i></a></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__contenedor">
+            <div class="flex-footer-hijo">
+                <p>Derechos Reservados</p>
+            </div>
+            <div>
+                <img src="./imagenes/firmon.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS - JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
+      
+</body>
+</html>

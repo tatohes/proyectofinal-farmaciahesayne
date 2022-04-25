@@ -1,0 +1,22 @@
+                                        /* FOOTER */
+
+.footer {
+    height: 100px;
+    box-shadow: #fff1;
+}
+
+.footer__contenedor {
+    @include crearFlex(space-around, center);
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-footer-hijo {
+    padding: 5px;
+    /* width: 100px;
+    height: 100px; */
+    color: antiquewhite;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+}

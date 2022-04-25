@@ -1,0 +1,11 @@
+@mixin crearFlex($eje-principal, $eje-secundario) {
+    display: flex;
+    justify-content: $eje-principal;
+    align-items: $eje-secundario;
+}
+
+@mixin crearGrid($eje-principal, $eje-secundario) {
+    display: grid;
+    justify-content: $eje-principal;
+    align-items: $eje-secundario;
+}
